@@ -36,10 +36,10 @@ export default function FormText(props) {
             rows="8"
           ></textarea>
         </div>
-        <button className="btn btn-primary" onClick={handleUpClick}>
+        <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={handleLowClick}>
+        <button disabled={text.length===0} className="btn btn-primary mx-1" onClick={handleLowClick}>
           Convert to Lowercase
         </button>
       </div>
